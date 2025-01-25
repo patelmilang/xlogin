@@ -43,10 +43,10 @@ function App() {
         </div>}
         {!isLoggedIn && <>
           <div>
-            Username : <input type='text' name="username" value={user.username} onChange={(e) => handleChange(e)} required />
+            Username : <input type='text' name="username" placeholder='username' value={user.username} onChange={(e) => handleChange(e)} required />
           </div>
           <div>
-            Password : <input type='password' name="password" value={user.password} onChange={(e) => handleChange(e)} required />
+            Password : <input type='password' name="password" placeholder='password' value={user.password} onChange={(e) => handleChange(e)} required />
           </div>
           <div>
             <button type='submit' value='Login' name='Login' >Login</button>
